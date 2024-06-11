@@ -8,15 +8,73 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-    <div class="wrapper">
-            
-    </div>
+    
+        <div class="wrapper">
+            <div class="login-form">
+                <h1><img src="./assets/images/logo-light.png" alt="" id="logo"></h1>
+                <form action="./action.html" >
+                    <div class="id-box">
+                        <input type="text" id="id">
+                        <span class="id-txt">전화번호, 사용자 이름 또는 이메일</span>
+                    </div>
+                    <div class="pw-box">
+                        <input type="password" id="pw">
+                        <span class="pw-txt">비밀번호</span>
+                        <span class="show-pw">비밀번호 표시</span>
+                    </div>
+                    <button type="submit" class="login-btn">로그인</button>
+                </form>
+                <div class="or">
+                    <div class="or-border"></div>
+                    <div class="or-main">또는</div>
+                    <div class="or-border"></div>
+                </div>
+                <div class="facebook-login">
+                    <a href="#">
+                        <img src="./assets/images/facebook-icon.png" alt="">
+                        <p><span style="font-weight: bold;">Facebook</span>으로 로그인</p>
+                    </a>
+                </div>
+                <div class="forget-pw"><a href="#">비밀번호를 잊으셨나요?</a></div>
+            </div>
+
+            <div class="no-account">
+                <p>계정이 없으신가요?</p>
+                <a href="#">가입하기</a>
+            </div>
+
+            <div class="download">
+               앱을 다운로드하세요.
+            </div>
+
+            <div class="download-link">
+                <a href=""><img src="./assets/images/app-store.png" alt=""></a>
+                <a href=""><img src="./assets/images/gg-play.png" alt=""></a>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-link">
+                <a href="">Meta</a>
+                <a href="">소개</a>
+                <a href="">블로그</a>
+                <a href="">채용 정보</a>
+                <a href="">도움말</a>
+                <a href="">API</a>
+                <a href="">개인정보처리방침</a>
+                <a href="">약관</a>
+                <a href="">위치</a>
+                <a href="">Instagram Lite</a>
+                <a href="" id="darkmode">Darkmode</a>
+            </div>
+            <div class="footer-last">2024 Instagram from Meta</div>
+        </footer>
+   
     <script src="./script.js"></script>
 </body>
 </html>
