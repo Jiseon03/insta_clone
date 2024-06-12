@@ -1,0 +1,248 @@
+:root {
+    --body-bg: #fafafa;
+    --box-bg: #fff;
+    --box-border-color: #dbdbdb;
+    --txt-color: #262626;
+    --txt-second-color: #8e8e8e;
+    --btn-bg: #0095f6;
+    --btn-color: #fff;
+    --fb-color: #385185;
+    --a-color: #00376b;
+  }
+  
+.dark {
+    --body-bg: #151515;
+    --box-bg: #151515;
+    --box-border-color: #262626;
+    --txt-color: #d2d2d2;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--body-bg);
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wrapper {
+    width: 25%;
+    margin: 0 auto;
+}
+
+.login-form {
+    width: 100%;
+    height: 500px;
+    background-color: var(--box-bg);
+    border: 1px solid var(--box-border-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-form h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-form img {
+    width: 50%;
+}
+
+.login-form form {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form form input {
+    width: 100%;
+    background-color: var(--box-bg);
+    color: var(--txt-color);
+    border: 1px solid var(--box-border-color);
+    padding: 12px;
+    margin-bottom: 10px;
+}
+
+.id-box, .pw-box {
+    position: relative;
+}
+
+.id-txt{
+    color: var(--txt-second-color);
+    font-size: 15px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transition: all 200ms ease-in-out;
+    pointer-events: none;
+}
+
+.pw-txt{
+    color: var(--txt-second-color);
+    font-size: 15px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transition: all 200ms ease-in-out;
+    pointer-events: none;
+}
+
+
+.is-active{
+    font-size: 12px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+.show-pw {
+    font-weight: 700;
+    color: var(--txt-color);
+    position: absolute;
+    top: 10px;
+    right: 0;   
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+}
+
+.show-pw:hover {
+    color: var(--txt-second-color);
+}
+
+.is-none{
+    display: none;
+}
+
+.login-btn {
+    background-color: var(--btn-bg);
+    color: var(--btn-color);
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.login-btn.dark{
+    background-color: var(--a-color);
+}
+
+.or {
+    width: 73%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    color: var(--txt-second-color);
+}
+
+.or-border {
+    border-top: 1px solid var(--txt-second-color);
+    width: 40%;
+    margin-top: 8px;
+}
+
+.or-main {
+    padding: 0 8px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.facebook-login{
+    width: 70%;
+    margin: 30px auto;
+}
+
+.facebook-login a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--fb-color);
+    font-size: 15px;
+}
+
+.facebook-login img{
+    width: 8%;
+    margin-right: 5px;
+}
+
+.forget-pw a{
+    text-decoration: none;
+    color: var(--txt-color);
+    font-size: 13px;
+}
+
+.no-account {
+    width: 100%;
+    height: 80px;
+    margin-top: 30px;
+    background-color: var(--box-bg);
+    border: 1px solid var(--box-border-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.no-account p{
+    color: var(--txt-color);
+}
+
+.no-account a{
+    color: var(--btn-bg);
+    font-weight: 700;
+    margin-left: 5px;
+}
+
+.download {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 15px;
+    color: var(--txt-color);
+}
+
+.download-link {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center ;
+}
+
+.download-link a img{
+    width: 180px;
+    margin-right: 5px;
+}
+
+footer {
+    margin-top : 20px;
+}
+
+.footer-link {
+    display: flex;
+    justify-content: center;
+    margin : 25px 0;
+}
+
+.footer-link a {
+    text-decoration: none;
+    margin-right: 15px;
+    color: var(--txt-second-color);
+}
+
+.footer-last {
+    text-align: center;
+    color: var(--txt-second-color);
+}
