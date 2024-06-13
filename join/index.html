@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="./style.css">
+   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <script src="https://kit.fontawesome.com/9457c1c408.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="form-container">
+           <div class="box input-box">
+            <h1 class="logo">
+                <a href="" class="light-logo">
+                    <img src="../assets/images/logo-light.png" alt="insta-logo-light">
+                </a>
+                <a href="" class="dark-logo">
+                    <img src="../assets/images/logo-dark.png" alt="insta-logo-dark">
+                </a>
+            </h1>
+
+            <p class="join-txt">친구들의 사진과 동영상을 보려면 가입하세요.</p>
+            <button class="btn-blue fb-btn"><i class="fa-brands fa-facebook-f"></i>Facebook으로 로그인</button>
+
+            <div class="or-box">
+                <div></div>
+                <div>또는</div>
+                <div></div>
+            </div>
+
+            <form action="" id="login-form" class="login-form">
+                <div class="animate-input userid-box">
+                    <input type="text" id="user-num">
+                    <span>휴대폰 번호 또는 이메일 주소</span>
+                </div>
+                <div class="animate-input userid-box">
+                    <input type="text" id="user-name">
+                    <span>성명</span>
+                </div>
+                <div class="animate-input userid-box">
+                    <input type="text" id="userid">
+                    <span>사용자 이름</span>
+                </div>
+                <div class="animate-input userpw">
+                    <input type="password" id="userpw">
+                    <span>비밀번호</span>
+                    <button type="button" id="pw-visible">비밀번호 표시</button>
+                </div>
+                <p class="more-txt">저희 서비스를 이용하는 사람이 회원님의 연락처 정보를 Instagram에 업로드했을 수도 있습니다. <a href="">더 알아보기</a></p>
+                <button type="submit" id="submit-btn" class="btn-blue" disabled>가입</button>
+            </form>
+            
+           </div>
+
+           <div class="box join-box">
+                <a href="../선생님꺼/index.html">계정이 있으신가요?<span>로그인</span></a>
+           </div>
+
+           <p class="app-txt">앱을 다운로드 하세요.</p>
+
+           <div class="app-down">
+            <a href="">
+                <img src="../assets/images/app-store.png" alt="app-store">
+            </a>
+            <a href="">
+                <img src="../assets/images/gg-play.png" alt="gg-play">
+            </a>
+           </div>
+        </div>
+
+        <footer>
+            <ul class="footer-menu-list">
+              <li><a href="">Meta</a></li>
+              <li><a href="">소개</a></li>
+              <li><a href="">블로그</a></li>
+              <li><a href="">채용 정보</a></li>
+              <li><a href="">도움말</a></li>
+              <li><a href="">API</a></li>
+              <li><a href="">개인정보처리방침</a></li>
+              <li><a href="">약관</a></li>
+              <li><a href="">인기 계정</a></li>
+              <li><a id="mode-toggle" href="">Darkmode</a></li>
+            </ul>
+      
+            <p class="copyright">© 2024 Instagram from Meta</p>
+          </footer>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
