@@ -151,6 +151,16 @@ body.dark .light-logo {
     font-size: 10px;
   } 
   
+  .id-warn{
+    color: indianred;
+    font-size: 11px;
+    text-align: left;
+    display: none;
+  } 
+  
+  .is-active{
+    display: block;
+  }
   .userpw button {
     position: absolute;
     top: 10px;
@@ -176,6 +186,7 @@ body.dark .light-logo {
 .or-box {
     display: flex;
     align-items: center;
+   
 }
 
 
