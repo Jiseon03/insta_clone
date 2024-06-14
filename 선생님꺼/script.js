@@ -42,18 +42,21 @@ userId.addEventListener('keyup',handleInput);
 userPw.addEventListener('keyup',handleInput);
 
 let userIdBox = document.querySelector('.userid-box')
-let idWarnTxt = document.querySelector('id-warn');
+let idWarnTxt = document.querySelector('.id-warn');
 userId.addEventListener('keyup',function(e){
     console.log(userId.value.length);
     if(userId.value.length < 8 && userId.value.length > 0){
        userIdBox.style.border = '1px solid indianred';
+       idWarnTxt.classList.add('is-active');
         e.preventDefault();
     }
     else if(userId.value.length == 0){
         userIdBox.style.border = '1px solid var(--box-border-color)';
+        idWarnTxt.classList.remove('is-active');
     }
     else{
         userIdBox.style.border = '1px solid var(--box-border-color)';
+        idWarnTxt.classList.remove('is-active');
     }
     
 })
