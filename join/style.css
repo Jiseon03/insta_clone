@@ -144,19 +144,39 @@ button {
 .animate-input{
     position: relative;
     margin-bottom: 10px;
+    padding: 5px;
 }
 
 .animate-input span {
     position: absolute;
-    top: 9px;
-    left: 9px;
+    top: 14px;
+    left: 12px;
     font-size: 13px;
     color: var(--txt-second-color);
+    pointer-events: none;
+    transition: all 200ms ease-in;
 }
 
-#pw-visible {
-    display: none;
+.animate-input.active span {
+    top: 5px;
+    left: 5px;
+    font-size: 10px;
 }
+
+.pw-visible {
+    display: none;
+    position: absolute;
+    top: 12px;
+    right: 5px; 
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.animate-input.active .pw-visible{
+    display: block;
+}
+
+
 
 #submit-btn:disabled {
     background-color: var(--light-blue);
@@ -167,6 +187,7 @@ button {
 .more-txt{
     font-size: 12px;
     padding: 10px 0 20px 0;
+
 }
 
 .join-box a{
