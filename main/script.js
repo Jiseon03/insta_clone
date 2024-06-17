@@ -21,13 +21,13 @@ function 모달창닫기(btn, modal){
     })
 }
 
-//새 게시물 만들기 모달창 열고닫기
+//'새 게시물 만들기' 모달창 열고닫기
 모달창열기(newPostBtn,upload);
 모달창닫기(postCloseBtn,upload);
 
 
 
-//옵션 모달창 열고닫기
+//'옵션' 모달창 열고닫기
 optionBtn.forEach(item => {
     모달창열기(item,moreOption)
 });
