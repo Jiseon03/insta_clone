@@ -22,7 +22,7 @@
             </a>
         </h1>
         <div class="gnb-icon-wrap">
-            <a href="">
+            <a href="" id="new-post-btn">
                 <i class="fa-regular fa-square-plus"></i>
             </a>
             <a href="">
@@ -46,7 +46,7 @@
                             <div class="profile-name">Jiseon</div>
                             <div class="profile-sub">Daejeon, South Korea</div>
                         </div>
-                        <a href=""><i class="fa-solid fa-ellipsis"></i></a>
+                        <a href="" class="option-btn"><i class="fa-solid fa-ellipsis"></i></a>
                    </div>
                    <div class="box-img-container">
                     <img src="./images/멍.jpeg" alt="">
@@ -88,7 +88,7 @@
                         <div class="profile-name">Jiseon</div>
                         <div class="profile-sub">Daejeon, South Korea</div>
                     </div>
-                    <a href=""><i class="fa-solid fa-ellipsis"></i></a>
+                    <a href="" class="option-btn"><i class="fa-solid fa-ellipsis"></i></a>
                </div>
                 <div class="box-img-container">
                  <img src="./images/멍1.jpeg" alt="">
@@ -122,8 +122,8 @@
                 <div class="comment-post">게시</div>
              </a>
          </div>
-         
         </div>
+
         <div class="wrap2">
             <div class="box">
                 <div class="box-header">
@@ -158,24 +158,55 @@
                     <div class="recommend-user">
                         <a href=""><img src="./images/user.jpeg" alt="" class="recommend-user-img"></a>
                         <div class="recommend-user-txt">
-                            <div>Jiseon</div>
+                            <div>lorem</div>
                             <div>회원님을 위한 추천</div>
                         </div>
                     </div>
                     <div class="recommend-user">
                             <a href=""><img src="./images/user.jpeg" alt="" class="recommend-user-img"></a>
                             <div class="recommend-user-txt">
-                                <div>Jiseon</div>
+                                <div>Jasfes</div>
                                 <div>회원님을 위한 추천</div>
                             </div>
                     </div>
-               
-              
-           
+               </div>
            </div>
-           </div>
-            </div>
         </div>
     </div>
+
+    <div class="overlay">
+       
+    </div>
+
+    <div class="more-option">
+        <ul class="more-option-list">
+            <li>삭제</li>
+            <li>수정</li>
+            <li>다른사람에게 좋아요 수 숨기기</li>
+            <li>댓글 기능 해제</li>
+            <li>게시물로 이동</li>
+            <li>공유 대상...</li>
+            <li>링크 복사</li>
+            <li>퍼가기</li>
+            <li class="more-option-close">취소</li>
+        </ul>
+    </div>
+
+    <div class="upload">
+        <button class="post-close-btn"><i class="fa-solid fa-xmark"></i></button>
+        <form action="">
+            <p>새 게시물 만들기</p>
+            <div class="post-img-preview">
+                <div><img src="./images/upload.png" alt=""></div>
+                <p>포스트 이미지 추가</p>
+                <canvas></canvas>
+            </div>
+            <div class="file-wrapper"><input type="file" name="" id=""></div>
+            <textarea name="" id="" placeholder="문구를 입력하세요.."></textarea>
+            <button type="submit">공유하기</button>
+        </form>
+    </div>
+    
+    <script src="./script.js"></script>
 </body>
 </html>

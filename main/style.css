@@ -31,13 +31,13 @@ a {
 
 button {
     border: none;
-   
+   cursor: pointer;
 }
 
 .gnb{
     width: 100%;
     height: 80px;
-    padding: 20px;
+    padding: 20px 100px;
     background-color: var(--box-bg);
     border-bottom: 1px solid var(--box-border-color);
     display: flex;
@@ -48,10 +48,17 @@ button {
 
 .gnb h1 {
     margin: 0;
+    
+}
+
+.gnb h1 a {
+    display: flex;
+    align-items: center;
 }
 
 .gnb h1 img{
-    width: 170px;
+    width: 140px;
+   
 }
 
 .gnb-icon-wrap {
@@ -117,6 +124,7 @@ button {
     box-sizing: border-box;
     display: flex;
     padding: 10px;
+  
 }
 
 .box-icon i{
@@ -220,3 +228,165 @@ button {
 .recommend-txt-sub {
     color: var(--txt-second-color);
 }
+
+.overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: 0.7;
+    display: none;
+    transition: all 300ms ease-in-out;
+}
+.overlay.is-active{
+    display: block;
+}
+
+.more-option {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    display: none;
+    transition: all 800ms ease-in-out;
+}
+
+.more-option.is-active{
+    display: block;
+}
+
+.more-option-list {
+    z-index: 10;
+    width: 100%;
+    background-color: #fff;
+    opacity: 1;
+    list-style: none;
+    text-align: center;
+    border-radius: 15px;
+    padding: 0;
+}
+
+.more-option-list li{
+    padding: 10px;
+    border-bottom: 1px solid var(--txt-second-color);
+}
+
+.more-option-close{
+    color: red;
+    padding: 5px;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.upload {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 450px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    display: none;
+    padding: 20px;
+}
+
+.upload.is-active{
+    display: block;
+}
+
+.post-close-btn{
+    position: fixed;
+    top: -100px;
+    right: -650px;
+    font-size: 30px;
+    color: #fff;
+    background-color: transparent;
+}
+
+.upload form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload p{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.post-img-preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.post-img-preview p{
+    padding: 0;
+    margin: 0;
+}
+
+.file-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+.upload img{
+    width: 100px;
+}
+
+.upload textarea{
+    width: 100%;
+    height: 150px;
+    margin: 10px 0;
+}
+.upload form button{
+    width: 100%;
+    height: 30px;
+    background-color: var(--light-blue);
+    color: #fff;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+@media screen and (max-width : 960px) {
+    .wrap2 {
+        display: none;
+    }
+
+   .wrapper {
+       width: 80%;
+   }
+
+   .wrap1 {
+    width: 100%;
+    margin: 0;
+   }
+
+   .gnb{
+    height: 80px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    .gnb h1 img{
+        width: 120px; 
+    }
+
+    .gnb-icon-wrap i {
+        font-size: 20px;
+        padding: 0 5px;
+    }
+}
+
