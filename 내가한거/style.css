@@ -38,7 +38,7 @@ body {
 }
 
 .wrapper {
-    width: 25%;
+    width: 360px;
     margin: 0 auto;
 }
 
@@ -83,9 +83,9 @@ body {
 
 .id-txt{
     color: var(--txt-second-color);
-    font-size: 15px;
+    font-size: 12px;
     position: absolute;
-    top: 10px;
+    top: 12px;
     left: 10px;
     transition: all 200ms ease-in-out;
     pointer-events: none;
@@ -93,9 +93,9 @@ body {
 
 .pw-txt{
     color: var(--txt-second-color);
-    font-size: 15px;
+    font-size: 12px;
     position: absolute;
-    top: 10px;
+    top: 12px;
     left: 10px;
     transition: all 200ms ease-in-out;
     pointer-events: none;
@@ -110,11 +110,12 @@ body {
 }
 
 .show-pw {
+    font-size: 12px;
     font-weight: 700;
     color: var(--txt-color);
     position: absolute;
-    top: 10px;
-    right: 0;   
+    top: 12px;
+    right: 5px;   
     transition: all 200ms ease-in-out;
     cursor: pointer;
 }
